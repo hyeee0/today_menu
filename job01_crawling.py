@@ -17,6 +17,7 @@ for i in range(1, 26): # 1페이지 부터 25페이지
         url = 'https://2bob.co.kr/recipe.php?id=list&fKeyList=&fKeyValue=&eTheme={}&OrderCondition=&OrderBy=&page={}'.format(i,j)
 
         menu_titles = []
+        menu_recipes = []
         # summary = []
         driver.get(url)
         for k in range(1, 21):
@@ -30,6 +31,8 @@ for i in range(1, 26): # 1페이지 부터 25페이지
             driver.find_element('xpath', menu_xpath2).click()
             time.sleep(0.1)
             driver.back()
+            menu_titles.append(menu_title)
+            menu_recipes.append(menu_recipe)
 
-    df = pd.DataFrame({'menu_titles':menu_titles, 'menu_recipe':menu_recipe})
-    df.to_csv('./crawling_data/recipe_{}_{}page.csv'.format(menu_titles, pages[k]), index=False)
+        df = pd.DataFrame({'menu_titles':menu_titles, 'menu_recipe':menu_recipe})
+        df.to_csv('./crawling_data/recipe_{}page.csv'.format(j), index=False)
