@@ -26,13 +26,13 @@ for i in range(1, 26): # 1페이지 부터 25페이지
             driver.find_element('xpath', menu_xpath1).click() # 음식명 클릭해서 상세페이지 들어감
             time.sleep(0.1)
 
-            menu_xpath2 = '//*[@id="con_wrapper"]/div[5]/div[2]/div[2]/div[2]'     # 카테고리 선택버튼
+            menu_xpath2 = '//*[@id="con_wrapper"]/div[5]/div[2]/div[2]/div[2]'
             menu_recipe = driver.find_element('xpath', menu_xpath2).text # 음식명 텍스트로 저장
-            driver.find_element('xpath', menu_xpath2).click()
-            time.sleep(0.1)
+            #print(menu_recipe)
             driver.back()
             menu_titles.append(menu_title)
             menu_recipes.append(menu_recipe)
 
-        df = pd.DataFrame({'menu_titles':menu_titles, 'menu_recipe':menu_recipe})
+
+        df = pd.DataFrame({'menu_titles':menu_titles, 'menu_recipes':menu_recipes})
         df.to_csv('./crawling_data/recipe_{}page.csv'.format(j), index=False)
