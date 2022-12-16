@@ -43,9 +43,7 @@ class Exam(QWidget, form_window):
     # 반복되는 코드를 함수로 만들어 주자(제목 함수)
     def recommendation_by_menu_title(self, menu_titles):
         menu_idx = self.df_clean_menu_recipes[self.df_clean_menu_recipes['menu_titles'] == menu_titles].index[0]  # '' 안에 영화의 인덱스를 찾아준다
-        print('error1')
         cosin_sim = linear_kernel(self.tfidf_matrix[menu_idx], self.tfidf_matrix)  # 두 벡터 사이의 각도가 1일수록 유사도가 높다(코사인심 -> 코사인 유사도)
-        print('error2')
         recommendation = self.getRecommendation(cosin_sim)
         recommendation = list(recommendation)
         print(recommendation)
@@ -100,7 +98,7 @@ class Exam(QWidget, form_window):
             if len(word) > 0:  # 단어길이가 0보다 크고 -> 1글자 이상
                 words.append(word)  # 리스트에 추가해준다
         cleaned_sentence = ' '.join(words)  # 포함시키지 않은 단어는 공백으로 만든다.
-
+        print(type(cleaned_sentence))
         sentence_vec = self.tfidf.transform([cleaned_sentence])
         cosin_sim = linear_kernel(sentence_vec, self.tfidf_matrix)
         recommendation = self.getRecommendation(cosin_sim)
