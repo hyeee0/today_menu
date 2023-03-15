@@ -43,10 +43,10 @@ pip install -r requirements.txt
   <img width="850" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/xdZgV0Sevh.png">
 </div>
   <h5>구축 환경 </h5>
-  <h6>Python 3.8 / Google Colab </h6>
+  <h6>Python 3.7 </h6>
   <h5>데이터셋</h5>
-  <h6>챗봇의 데이터셋은 <'AI HUB'의 감성 대화 말뭉치>와 <웰니스 챗봇 데이터> 2가지를 활용하여 데이터셋을 구성했습니다.<br><br>
-      데이터셋은 총 3개의 라벨로 구성되어 있으며, 라벨의 기준은 문장을 감정으로 분류하여 일상, 부정, 긍정으로 나누었습니다.<br><br><br>
+  <h6>첫 번째 추천방법은 ‘메뉴의 명’을 입력 했을 때입니다.<br><br>
+      이 방법은 우리가 알고 있는 메뉴의 명을 넣게 되면 비슷한 식재료의 다른 레시피를 알려줌으로서 색다른 조리할 수 있다는 장점이 있습니다.<br><br><br>
   </h6>
   <p>
 </details>
@@ -59,8 +59,7 @@ pip install -r requirements.txt
   <h6> 학습은 max_epochs=15로 15번 반복하여 Train_loss값이 가장 낮은 모델을 저장하는 방식으로 진행됩니다.<br><br>
        데이터양, 라벨의 수, max_len 총 3가지를 수정하여 3회 정도 모델 학습을 진행하였습니다. <br><br>
        최종적으로 사용한 모델은 데이터량 약 236,000개 / 라벨 총 3개 / max_len = 64이며, epochs=4일 때, Train_loss가 31.63으로 가장 낮게 나왔습니다. <br><br>
-<div align= "center">
-  <img width="850" src = "https://i.esdrop.com/d/f/CcSudjZ5R8/ZjI4VldVdJ.png">
+
 </div>
   <br><br><br>
   </h6>
