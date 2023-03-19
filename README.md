@@ -1,7 +1,7 @@
 # 'NLP 기반의 추천모델' <오늘 뭐 먹지?>
 
 <div align= "center">
-  <img width="400" src="https://i.esdrop.com/d/f/NXl6YkfhTU/90s6GXiFPx.jpg">
+  <img width="500" src="https://i.esdrop.com/d/f/NXl6YkfhTU/90s6GXiFPx.jpg">
 </div>
 <br>
 <br>
@@ -33,6 +33,10 @@
 ```python
 pip install -r requirements.txt
 ```
+
+<br>
+<h2> 📝 Word2Vec을 통해 추천 알고리즘</h2>
+
 
 
 <h2> 🍽 오늘 뭐 먹지? 🍽 </h2>
