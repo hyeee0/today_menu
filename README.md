@@ -25,11 +25,15 @@
 <br>
 <br>
 
-<h2> 🔌requirements 설치 </h2>
+<h2> 🔌구축환경 및 requirements 설치</h2>
+
+<h5>구축 환경 </h5>
+  <h6>Python 3.7 </h6>
 
 ```python
 pip install -r requirements.txt
 ```
+
 
 <h2> 🍽 오늘 뭐 먹지? 🍽 </h2>
 
@@ -39,10 +43,9 @@ pip install -r requirements.txt
 <details>
 <summary><b>메뉴명으로 추천 받기</b></summary>
 <div align= "center">
-  <img width="850" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/xdZgV0Sevh.png">
+  <img width="500" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/xdZgV0Sevh.png">
 </div>
-  <h5>구축 환경 </h5>
-  <h6>Python 3.7 </h6>
+  
   <h5>메뉴이름으로 추천받기</h5>
   <h6>첫 번째 추천방법은 ‘메뉴의 명’을 입력 했을 때입니다.<br><br>
       이 방법은 우리가 알고 있는 메뉴의 명을 넣게 되면 비슷한 식재료의 다른 레시피를 알려줌으로서 색다른 조리할 수 있다는 장점이 있습니다.<br><br><br>
@@ -52,12 +55,12 @@ pip install -r requirements.txt
 <details>
 <summary><b>키워드로 추천 받기</b></summary>
 <div align= "center">
-  <img width="850" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/DxzPNmNg9J.png">
+  <img width="500" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/DxzPNmNg9J.png">
 </div>
-  <h5> 모델 학습 과정 </h5>
-  <h6> 학습은 max_epochs=15로 15번 반복하여 Train_loss값이 가장 낮은 모델을 저장하는 방식으로 진행됩니다.<br><br>
-       데이터양, 라벨의 수, max_len 총 3가지를 수정하여 3회 정도 모델 학습을 진행하였습니다. <br><br>
-       최종적으로 사용한 모델은 데이터량 약 236,000개 / 라벨 총 3개 / max_len = 64이며, epochs=4일 때, Train_loss가 31.63으로 가장 낮게 나왔습니다. <br><br>
+  <h5>특정 키워드로 추천받기</h5>
+  <h6>두 번째 추천방법은 ‘키워드’를 입력 했을 때입니다.<br><br>
+      이 방법의 경우는 ‘크리스마스’, ‘갈치’, ‘쌀쌀한’ 등 키워드를 입력할 경우 분위기나 식재료에 걸 맞는 메뉴와 그 메뉴의 레시피를 추천 받을 수 있습니다.<br><br><br>
+  </h6>
 
 </div>
   <br><br><br>
@@ -68,6 +71,10 @@ pip install -r requirements.txt
 <details>
 <summary><b>문장으로 추천 받기</b></summary>
 <div align= "center">
-  <img width="850" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/Vf725py4ae.png">
+  <img width="500" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/Vf725py4ae.png">
 </div>
+  <h5>문장으로 추천받기</h5>
+  <h6>세 번째 추천방법은 ‘’을 입력 했을 때입니다.<br><br>
+      이 방법은 ‘아이가 너무 좋아하는 음식’처럼 문장을 입력하면 해당 문장에 맞는 음식과 음식의 레시피를 추천 받을 수 있습니다.<br><br><br>
+  </h6>
 </details>
