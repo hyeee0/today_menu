@@ -73,7 +73,7 @@ pip install -r requirements.txt
   <img width="500" src = "https://i.esdrop.com/d/f/NXl6YkfhTU/Vf725py4ae.png">
 </div>
   <h5>문장으로 추천받기</h5>
-  <h6>세 번째 추천방법은 ‘’을 입력 했을 때입니다.<br><br>
+  <h6>세 번째 추천방법은 ‘문장’을 입력 했을 때입니다.<br><br>
       이 방법은 ‘아이가 너무 좋아하는 음식’처럼 문장을 입력하면 해당 문장에 맞는 음식과 음식의 레시피를 추천 받을 수 있습니다.<br><br><br>
   </h6>
 </details>
