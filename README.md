@@ -1,7 +1,7 @@
 # 'NLP 기반의 추천모델' <오늘 뭐 먹지?>
 
 <div align= "center">
-  <img width="850" src="https://i.esdrop.com/d/f/NXl6YkfhTU/90s6GXiFPx.jpg">
+  <img width="400" src="https://i.esdrop.com/d/f/NXl6YkfhTU/90s6GXiFPx.jpg">
 </div>
 <br>
 <br>
@@ -63,7 +63,6 @@ pip install -r requirements.txt
   </h6>
 
 </div>
-  <br><br><br>
   </h6>
   
 </div>
